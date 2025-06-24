@@ -9,7 +9,7 @@ body {
   position: relative; 
   padding: 16px;
   border-radius: 8px;
-  background-image: url('calendar-header.png');  
+  background-image: url('/calendar-header.png');  
   background-size: cover;       
   background-repeat: no-repeat; 
   background-position: center;  
