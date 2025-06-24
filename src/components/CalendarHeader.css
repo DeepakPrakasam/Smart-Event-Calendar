@@ -185,8 +185,8 @@ p {
 }
 
 .option {
-  flex: 0 0 auto; /* Prevent shrinking */
-  min-width: 60px;
+  flex: 0 0 auto; 
+  min-width: 40px;
   text-align: center;
 }
 
