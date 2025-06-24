@@ -1,4 +1,3 @@
-
 .calendar-grid {
   max-width: 100%;
   margin: 30px;
@@ -8,7 +7,6 @@
   font-family: "Times New Roman", Times, serif;
   text-align: center; 
   font-style: italic;
-
 }
 
 .calendar-header {
@@ -51,7 +49,6 @@
 }
 
 .cell.today {
-    
   border-left: 5px solid #0e3976;
   border-radius: 5%;
   background-color:#f1f6fc;
@@ -60,7 +57,6 @@
 .date-number {
   font-weight: bold;
   margin-bottom: 4px;
-  
 }
 
 .event {
@@ -102,3 +98,111 @@
   opacity: 1;
 }
 
+/* Tablet Styles */
+@media screen and (max-width: 1024px) {
+  .calendar-grid {
+    margin: 20px;
+    padding: 2%;
+    border-radius: 2%;
+  }
+  
+  .month-year {
+    font-size: 1.3rem;
+  }
+  
+  .cell {
+    min-height: 80px;
+    padding: 3px;
+  }
+  
+  .day-name {
+    padding: 6px 0;
+    font-size: 0.9rem;
+  }
+  
+  .event {
+    font-size: 0.7rem;
+    padding: 1px 3px;
+  }
+}
+
+/* Mobile Styles */
+@media screen and (max-width: 768px) {
+  .calendar-grid {
+    margin: 10px;
+    padding: 3%;
+    border-radius: 2%;
+  }
+  
+  .calendar-header {
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .month-year {
+    font-size: 1.2rem;
+  }
+  
+  .cell {
+    min-height: 60px;
+    padding: 2px;
+  }
+  
+  .day-name {
+    padding: 4px 0;
+    font-size: 0.8rem;
+  }
+  
+  .date-number {
+    font-size: 0.9rem;
+    margin-bottom: 2px;
+  }
+  
+  .event {
+    font-size: 0.6rem;
+    padding: 1px 2px;
+    margin-top: 2px;
+  }
+  
+  .custom-tooltip {
+    font-size: 0.7rem;
+    padding: 3px 6px;
+  }
+}
+
+/* Small Mobile Styles */
+@media screen and (max-width: 480px) {
+  .calendar-grid {
+    margin: 5px;
+    padding: 2%;
+  }
+  
+  .month-year {
+    font-size: 1.1rem;
+  }
+  
+  .cell {
+    min-height: 50px;
+    padding: 1px;
+  }
+  
+  .day-name {
+    padding: 3px 0;
+    font-size: 0.7rem;
+  }
+  
+  .date-number {
+    font-size: 0.8rem;
+  }
+  
+  .event {
+    font-size: 0.5rem;
+    padding: 1px;
+    margin-top: 1px;
+  }
+  
+  .cell.today {
+    border-left: 3px solid #0e3976;
+  }
+}

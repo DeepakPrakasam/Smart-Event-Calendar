@@ -6,7 +6,6 @@
   margin: 30px;
   background-color: rgb(255, 255, 255);
   border-radius: 3%;
-  
 }
 
 .day-view-controls {
@@ -25,7 +24,6 @@
   font-size: 1.5rem;
 }
 
-
 .nav-btn {
   background-color: #3479d9;
   color: white;
@@ -40,7 +38,6 @@
 .nav-btn:hover {
   background-color: #265a9e;
 }
-
 
 .today-btn {
   background-color: #f0f0f0;
@@ -94,12 +91,9 @@
   text-align: center;
 }
 
-
 .fade-in {
   animation: fadeIn 0.3s ease-in-out;
 }
-
-
 
 @keyframes fadeIn {
   from {
@@ -151,4 +145,140 @@
   overflow: hidden;
   text-overflow: ellipsis;
   box-sizing: border-box;
+}
+
+
+@media screen and (max-width: 1024px) {
+  .day-view-container {
+    margin: 20px;
+    padding: 2%;
+  }
+  
+  .day-view-controls h2 {
+    font-size: 1.3rem;
+  }
+  
+  .nav-btn {
+    font-size: 1.1rem;
+    padding: 7px 12px;
+  }
+  
+  .today-btn {
+    font-size: 0.9rem;
+    padding: 7px 14px;
+  }
+  
+  .hour-block {
+    padding: 6px;
+  }
+  
+  .hour-label {
+    width: 55px;
+    font-size: 13px;
+  }
+  
+  .event {
+    font-size: 13px;
+    padding: 3px 7px;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .day-view-container {
+    margin: 10px;
+    padding: 3%;
+  }
+  
+  .day-view-controls {
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .day-view-controls h2 {
+    font-size: 1.2rem;
+    margin: 0;
+    order: 1;
+  }
+  
+  .nav-btn {
+    font-size: 1rem;
+    padding: 10px 16px;
+    min-width: 44px;
+    min-height: 44px;
+  }
+  
+  .today-btn {
+    font-size: 0.9rem;
+    padding: 10px 20px;
+    min-height: 44px;
+  }
+  
+  .hour-block {
+    padding: 4px;
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .hour-label {
+    width: 100%;
+    text-align: left;
+    font-size: 12px;
+    margin-bottom: 4px;
+    font-weight: bold;
+  }
+  
+  .hour-events {
+    gap: 4px;
+  }
+  
+  .event {
+    font-size: 12px;
+    padding: 6px 8px;
+    min-height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .day-schedule {
+    border-left: 1px solid #ddd;
+  }
+}
+
+
+@media screen and (max-width: 480px) {
+  .day-view-container {
+    margin: 5px;
+    padding: 2%;
+  }
+  
+  .day-view-controls h2 {
+    font-size: 1.1rem;
+  }
+  
+  .nav-btn {
+    font-size: 0.9rem;
+    padding: 8px 12px;
+  }
+  
+  .today-btn {
+    font-size: 0.8rem;
+    padding: 8px 16px;
+  }
+  
+  .hour-label {
+    font-size: 11px;
+  }
+  
+  .event {
+    font-size: 11px;
+    padding: 4px 6px;
+    min-height: 28px;
+  }
+  
+  .custom-tooltip {
+    font-size: 10px;
+    padding: 3px 6px;
+  }
 }
