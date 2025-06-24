@@ -1,12 +1,33 @@
-# React + Vite
+# React Calendar Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A user-friendly calendar interface built with React, vanilla CSS, and date-fns, inspired by Google Calendar.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+- **Monthly Calendar View**  
+  Displays the current month and year by default in a clean grid layout showing all dates.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Month Navigation**  
+  Easily navigate between previous and next months using dedicated buttons.
+
+- **Current Date Highlight**  
+  The current day is visually highlighted for better user orientation.
+
+- **Event Management**  
+  Loads events from a static JSON file and displays them on corresponding dates.
+
+- **Event Details**  
+  Each event shows title, date, time, and duration.
+
+- **Conflict Handling**  
+  Detects overlapping events on the same date and time, using color-coding or notifications to highlight conflicts.
+
+---
+
+## Tech Stack
+
+- **React** - Frontend UI library  
+- **Vanilla CSS** - Styling the calendar components  
+- **date-fns** - Date manipulation and formatting utilities  
