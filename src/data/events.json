@@ -1,0 +1,107 @@
+[
+  {
+    "date": "2025-05-10",
+    "startTime": "10:00",
+    "endTime": "11:30",
+    "color": "#6495ed",
+    "title": "Strategy Review"
+  },
+  {
+    "date": "2025-05-21",
+    "startTime": "14:00",
+    "endTime": "15:30",
+    "color": "#ba55d3",
+    "title": "Budget Planning"
+  },
+  {
+    "date": "2025-06-24",
+    "startTime": "00:00",
+    "endTime": "01:30",
+    "color": "#f6be23",
+    "title": "Daily Standup"
+  },
+  {
+    "date": "2025-06-24",
+    "startTime": "04:30",
+    "endTime": "07:30",
+    "color": "#f6501e",
+    "title": "Weekly Catchup"
+  },
+  {
+    "date": "2025-06-25",
+    "startTime": "09:00",
+    "endTime": "10:30",
+    "color": "#6a5acd",
+    "title": "Client Call"
+  },
+  {
+    "date": "2025-06-26",
+    "startTime": "13:00",
+    "endTime": "14:00",
+    "color": "#228b22",
+    "title": "Project Planning"
+  },
+  {
+    "date": "2025-07-01",
+    "startTime": "15:00",
+    "endTime": "16:00",
+    "color": "#ba55d3",
+    "title": "Team Meeting"
+  },
+  {
+    "date": "2025-07-04",
+    "startTime": "08:00",
+    "endTime": "09:00",
+    "color": "#1e90ff",
+    "title": "Performance Review"
+  },
+  {
+    "date": "2025-07-10",
+    "startTime": "10:00",
+    "endTime": "12:00",
+    "color": "#9932cc",
+    "title": "UX Workshop"
+  },
+  {
+    "date": "2025-08-15",
+    "startTime": "11:30",
+    "endTime": "13:00",
+    "color": "#ff69b4",
+    "title": "Design Sprint"
+  },
+  {
+    "date": "2025-08-20",
+    "startTime": "14:00",
+    "endTime": "15:30",
+    "color": "#00ced1",
+    "title": "One-on-One"
+  },
+  {
+    "date": "2025-09-05",
+    "startTime": "16:00",
+    "endTime": "17:00",
+    "color": "#ffa07a",
+    "title": "Product Demo"
+  },
+  {
+    "date": "2025-09-12",
+    "startTime": "19:00",
+    "endTime": "20:00",
+    "color": "#20b2aa",
+    "title": "Dinner with Team"
+  },
+  {
+    "date": "2025-10-01",
+    "startTime": "06:00",
+    "endTime": "07:00",
+    "color": "#ffb6c1",
+    "title": "Morning Workout"
+  },
+  {
+    "date": "2025-10-10",
+    "startTime": "12:00",
+    "endTime": "13:30",
+    "color": "#ff8c00",
+    "title": "Marketing Sync"
+  }
+]
