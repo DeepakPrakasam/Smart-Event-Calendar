@@ -149,7 +149,7 @@
   box-sizing: border-box;
 }
 
-/* Tablet Styles */
+
 @media screen and (max-width: 1024px) {
   .week-view-container {
     margin: 20px;
@@ -185,7 +185,7 @@
   }
 }
 
-/* Mobile Styles */
+
 @media screen and (max-width: 768px) {
   .week-view-container {
     margin: 10px;
@@ -261,7 +261,7 @@
   }
 }
 
-/* Small Mobile Styles */
+
 @media screen and (max-width: 480px) {
   .week-view-container {
     margin: 5px;
@@ -314,5 +314,5 @@
     font-size: 0.6rem;
     padding: 2px 4px;
   }
-  
+
 }

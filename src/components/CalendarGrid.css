@@ -98,7 +98,7 @@
   opacity: 1;
 }
 
-/* Tablet Styles */
+
 @media screen and (max-width: 1024px) {
   .calendar-grid {
     margin: 20px;
@@ -126,7 +126,7 @@
   }
 }
 
-/* Mobile Styles */
+
 @media screen and (max-width: 768px) {
   .calendar-grid {
     margin: 10px;
@@ -171,7 +171,7 @@
   }
 }
 
-/* Small Mobile Styles */
+
 @media screen and (max-width: 480px) {
   .calendar-grid {
     margin: 5px;

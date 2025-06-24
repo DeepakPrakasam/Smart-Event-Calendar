@@ -134,7 +134,7 @@ p {
   }
 
   .calendar-options {
-    flex-direction: row; /* Make it horizontal */
+    flex-direction: row; 
   flex-wrap: wrap; 
     top: 45px;
     left: auto;
