@@ -1,10 +1,10 @@
-.week-view-container{
-    padding: 1%;
-    margin: 30px;
-    border-radius: 3%;
-    background-color: rgb(255, 255, 255);
-    font-family: "Times New Roman", Times, serif;
-    font-style: italic;
+.week-view-container {
+  padding: 1%;
+  margin: 30px;
+  border-radius: 3%;
+  background-color: rgb(255, 255, 255);
+  font-family: "Times New Roman", Times, serif;
+  font-style: italic;
 }
 
 .week-view {
@@ -149,170 +149,177 @@
   box-sizing: border-box;
 }
 
-
 @media screen and (max-width: 1024px) {
   .week-view-container {
     margin: 20px;
     padding: 2%;
   }
-  
+
   .current-week-label {
     font-size: 1.3rem;
   }
-  
+
   .nav-btn {
     font-size: 1.1rem;
     padding: 7px 12px;
   }
-  
+
   .day-column-header {
     padding: 8px;
     font-size: 0.9rem;
   }
-  
+
   .time-label {
     width: 70px;
     font-size: 0.8rem;
   }
-  
+
   .hour-row {
     min-height: 35px;
   }
-  
+
   .event {
     font-size: 0.7rem;
     padding: 3px 5px;
   }
 }
 
-
 @media screen and (max-width: 768px) {
   .week-view-container {
     margin: 10px;
     padding: 3%;
   }
-  
+
   .week-nav {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
     padding: 0 10px;
-    flex-direction: column;
-    gap: 10px;
+    margin-bottom: 16px;
   }
-  
+
+  .nav-btn.left {
+    justify-self: start;
+  }
+
+  .nav-btn.right {
+    justify-self: end;
+  }
+
   .current-week-label {
+    grid-column: 2;
+    justify-self: center;
     font-size: 1.2rem;
-    order: 1;
   }
-  
+
   .nav-btn {
     font-size: 1rem;
     padding: 10px 16px;
     min-width: 44px;
     min-height: 44px;
   }
-  
-  .nav-btn.left,
-  .nav-btn.right {
-    margin: 0;
-  }
-  
+
   .week-view {
     overflow-x: scroll;
     -webkit-overflow-scrolling: touch;
   }
-  
+
   .week-header {
     min-width: 600px;
   }
-  
+
   .week-body {
     min-width: 600px;
   }
-  
+
   .day-column-header {
     padding: 6px 4px;
     font-size: 0.8rem;
     min-width: 80px;
   }
-  
+
   .time-label {
     width: 60px;
     font-size: 0.7rem;
     padding: 3px;
   }
-  
+
   .hour-row {
     min-height: 30px;
   }
-  
+
   .hour-cell {
     padding: 1px;
     min-width: 80px;
   }
-  
+
   .event {
     font-size: 0.6rem;
     padding: 2px 3px;
     margin: 1px 0;
   }
-  
+
   .custom-tooltip {
     font-size: 0.7rem;
     padding: 3px 6px;
   }
 }
 
-
 @media screen and (max-width: 480px) {
   .week-view-container {
     margin: 5px;
     padding: 2%;
   }
-  
+
+  .week-nav {
+    grid-template-columns: 1fr auto 1fr;
+    padding: 0 6px;
+  }
+
   .current-week-label {
     font-size: 1.1rem;
   }
-  
+
   .nav-btn {
     font-size: 0.9rem;
     padding: 8px 12px;
   }
-  
+
   .week-header {
     min-width: 500px;
   }
-  
+
   .week-body {
     min-width: 500px;
   }
-  
+
   .day-column-header {
     font-size: 0.7rem;
     padding: 4px 2px;
     min-width: 70px;
   }
-  
+
   .time-label {
     width: 50px;
     font-size: 0.6rem;
     padding: 2px;
   }
-  
+
   .hour-row {
     min-height: 25px;
   }
-  
+
   .hour-cell {
     min-width: 70px;
   }
-  
+
   .event {
     font-size: 0.5rem;
     padding: 1px 2px;
   }
-  
+
   .custom-tooltip {
     font-size: 0.6rem;
     padding: 2px 4px;
   }
-
 }

@@ -6,13 +6,13 @@ import {
   faCalendarWeek,
   faCalendarDay,
   faCalendar,
-  faListAlt,
 } from "@fortawesome/free-solid-svg-icons";
 import { format } from "date-fns";
 
 function CalendarHeader({ onViewChange }) {
   const [showOptions, setShowOptions] = useState(false);
   const [rotatingWord, setRotatingWord] = useState("Victories");
+  const [selectedView, setSelectedView] = useState("Month"); // Default view
 
   const words = ["Victories", "Business", "Schedule", "Travels"];
 
@@ -23,14 +23,16 @@ function CalendarHeader({ onViewChange }) {
         const nextIndex = (currentIndex + 1) % words.length;
         return words[nextIndex];
       });
-    }, 2000); // change word every 2 seconds
+    }, 2000);
 
-    return () => clearInterval(interval); // cleanup
+    return () => clearInterval(interval);
   }, []);
 
   const toggleOptions = () => setShowOptions(!showOptions);
 
   const handleOptionClick = (view) => {
+    const capitalizedView = view.charAt(0).toUpperCase() + view.slice(1);
+    setSelectedView(capitalizedView);
     onViewChange(view);
     setShowOptions(false);
   };
@@ -46,7 +48,7 @@ function CalendarHeader({ onViewChange }) {
       <div className="add-event">
         <div className="calendar-dropdown-container">
           <div className="calendaricon" onClick={toggleOptions}>
-            <FontAwesomeIcon icon={faCalendarDays} />
+            <FontAwesomeIcon icon={faCalendarDays} /> {selectedView}
           </div>
 
           {showOptions && (
@@ -59,25 +61,18 @@ function CalendarHeader({ onViewChange }) {
                 <span>Month</span>
               </div>
               <div className="option" onClick={() => handleOptionClick("week")}>
-                <FontAwesomeIcon icon={faCalendarWeek} />
+                <FontAwesomeIcon icon={faCalendarWeek}/>
                 <span>Week</span>
               </div>
               <div className="option" onClick={() => handleOptionClick("day")}>
-                <FontAwesomeIcon icon={faCalendarDay} />
+                <FontAwesomeIcon icon={faCalendarDay}/>
                 <span>Day</span>
               </div>
-              {/* <div
-                className="option"
-                onClick={() => handleOptionClick("event")}
-              >
-                <FontAwesomeIcon icon={faListAlt} />
-                <span>Event</span>
-              </div> */}
             </div>
           )}
         </div>
 
-        <h3 className="persistent-tooltip">Click This Icon To Change Calendar View</h3>
+        <h3 className="persistent-tooltip">START YOUR DAY ON A POSITIVE NOTE</h3>
       </div>
     </div>
   );
